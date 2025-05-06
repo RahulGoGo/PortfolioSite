@@ -5,40 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Name | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="hero">
+
+  <div class="background-animation"></div>
+
+  <header class="hero glass">
+    <img src="assets/profile.jpg" alt="Your Photo" class="profile-pic" />
     <h1>Your Name</h1>
-    <p>Data-driven. People-focused. Tech with empathy.</p>
-    <a href="#projects" class="cta">View My Work</a>
+    <p>Tech meets empathy. Data meets people.</p>
+    <a href="#projects" class="btn">See My Work</a>
   </header>
 
-  <section class="about" id="about">
+  <section id="about" class="glass">
     <h2>About Me</h2>
-    <p>I work at the intersection of pharmacy, data, and digital systems. I've been a pharmacy tech, an analyst, and a healthcare IT intern.</p>
+    <p>I blend clinical insight with data-driven thinking. Whether I’m in a pharmacy, building dashboards, or reimagining patient workflows, I’m all about impact at the human level.</p>
   </section>
 
-  <section class="projects" id="projects">
+  <section id="projects" class="glass">
     <h2>Projects</h2>
     <div class="project-card">
-      <img src="assets/project1.png" alt="Screenshot of project" />
+      <img src="assets/project1.png" alt="Epic Workflow" />
       <div>
-        <h3>Epic Systems Report Template</h3>
-        <p>Developed a standardized workflow tracker for a radiology department using Epic Radiant.</p>
-        <a href="https://github.com/yourusername/project-link" target="_blank">View on GitHub</a>
+        <h3>Radiology Tracker – Epic Systems</h3>
+        <p>Standardized workflow visualizations to reduce order bottlenecks and improve tech-user alignment at BJC.</p>
+        <a href="https://github.com/yourusername/project">GitHub ↗</a>
       </div>
     </div>
+    <!-- Add more cards as needed -->
   </section>
 
-  <section class="contact" id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: you@example.com</p>
-    <p><a href="https://linkedin.com/in/yourusername">LinkedIn</a></p>
-    <p><a href="https://github.com/yourusername">GitHub</a></p>
+  <section id="contact" class="glass">
+    <h2>Let's Connect</h2>
+    <p><i class="fas fa-envelope"></i> your.email@example.com</p>
+    <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/yourusername">LinkedIn</a></p>
+    <p><i class="fab fa-github"></i> <a href="https://github.com/yourusername">GitHub</a></p>
   </section>
 
   <footer>
-    <p>© 2025 Your Name</p>
+    <p>Made with curiosity & compassion. © 2025</p>
   </footer>
 
   <script src="script.js"></script>
