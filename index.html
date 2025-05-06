@@ -4,87 +4,43 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Name | Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-  <style>
-    body {
-      background: linear-gradient(135deg, #f3f4f6, #e0f2fe);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .glass {
-      background: rgba(255, 255, 255, 0.2);
-      backdrop-filter: blur(10px);
-      border-radius: 1rem;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="text-gray-800">
-  <section class="h-screen flex flex-col justify-center items-center text-center" data-aos="fade-in">
-    <h1 class="text-5xl font-bold">Your Name</h1>
-    <p class="mt-4 text-xl italic">Data-driven. People-focused. Tech with empathy.</p>
-    <a href="#projects" class="mt-8 px-6 py-3 bg-blue-500 text-white rounded-xl shadow-lg hover:bg-blue-600">View My Work</a>
+<body>
+  <header class="hero">
+    <h1>Your Name</h1>
+    <p>Data-driven. People-focused. Tech with empathy.</p>
+    <a href="#projects" class="cta">View My Work</a>
+  </header>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>I work at the intersection of pharmacy, data, and digital systems. I've been a pharmacy tech, an analyst, and a healthcare IT intern.</p>
   </section>
 
-  <section class="max-w-4xl mx-auto p-6" data-aos="fade-up" id="about">
-    <h2 class="text-3xl font-semibold mb-4">About Me</h2>
-    <p class="text-lg">I'm a hybrid thinker with a foot in pharmacy, a hand in data, and a heart in urban design. My experience spans Walgreens, BJC, RGA, and Mallinckrodt — where I’ve built systems, streamlined processes, and cared for people through precision and empathy.</p>
-  </section>
-
-  <section class="bg-white/60 p-6 mt-8" data-aos="fade-up" id="projects">
-    <h2 class="text-3xl font-semibold mb-6 text-center">Featured Projects</h2>
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="glass p-4">
-        <h3 class="text-xl font-bold">Clinical Systems Workflow Tool</h3>
-        <p class="mt-2">Created an Epic Radiant companion tool to support imaging workflow clarity for clinicians at BJC.</p>
-        <a href="#" class="text-blue-600 underline mt-2 inline-block">View Case Study</a>
-      </div>
-      <div class="glass p-4">
-        <h3 class="text-xl font-bold">COVID Test Distribution Analysis</h3>
-        <p class="mt-2">Automated Walgreens COVID test OTC sales data to enhance inventory responsiveness.</p>
-        <a href="#" class="text-blue-600 underline mt-2 inline-block">See Dashboard</a>
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <img src="assets/project1.png" alt="Screenshot of project" />
+      <div>
+        <h3>Epic Systems Report Template</h3>
+        <p>Developed a standardized workflow tracker for a radiology department using Epic Radiant.</p>
+        <a href="https://github.com/yourusername/project-link" target="_blank">View on GitHub</a>
       </div>
     </div>
   </section>
 
-  <section class="p-6 mt-8" data-aos="fade-up" id="experience">
-    <h2 class="text-3xl font-semibold mb-6">Experience</h2>
-    <ul class="space-y-4">
-      <li class="glass p-4">
-        <strong>BJC HealthCare — Clinical Applications Intern</strong>
-        <p>Worked on Epic Radiant system optimization, improving front-line clinical tools and workflow understanding.</p>
-      </li>
-      <li class="glass p-4">
-        <strong>Walgreens — Pharmacy Technician</strong>
-        <p>Recognized as Employee of the Month. Played a dual role managing both patient care and back-end workflow efficiency.</p>
-      </li>
-      <li class="glass p-4">
-        <strong>RGA — Software Engineering & Business Analyst Intern</strong>
-        <p>Developed and supported internal risk and investment tools across global teams.</p>
-      </li>
-      <li class="glass p-4">
-        <strong>Mallinckrodt — Product Strategy Analyst</strong>
-        <p>Supported generics operations with market data and plant-side analytics.</p>
-      </li>
-    </ul>
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: you@example.com</p>
+    <p><a href="https://linkedin.com/in/yourusername">LinkedIn</a></p>
+    <p><a href="https://github.com/yourusername">GitHub</a></p>
   </section>
 
-  <section class="p-6 mt-8" data-aos="fade-up" id="contact">
-    <h2 class="text-3xl font-semibold mb-4">Get In Touch</h2>
-    <form class="space-y-4 max-w-md">
-      <input type="text" placeholder="Name" class="w-full p-2 border rounded" />
-      <input type="email" placeholder="Email" class="w-full p-2 border rounded" />
-      <textarea placeholder="Message" class="w-full p-2 border rounded"></textarea>
-      <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Send</button>
-    </form>
-  </section>
-
-  <footer class="mt-12 text-center p-4 text-sm text-gray-500">
-    Made with 💙 by You | Urbanist, Technologist, Human
+  <footer>
+    <p>© 2025 Your Name</p>
   </footer>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
+  <script src="script.js"></script>
 </body>
 </html>
